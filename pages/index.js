@@ -31,7 +31,7 @@ const Home = () => {
                   animate="show" 
                   exit="hidden" 
                   className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-          something something something something something something something something
+          3rd year computer science student at Bar-Ilan University.
         </motion.p>
         {/* btn */}
         <div className="flex justify-center xl:hidden relative">
