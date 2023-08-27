@@ -97,6 +97,10 @@ const aboutData = [
         title: 'B.Sc. In Computer Science - Bar-Ilan University',
         stage: '2021-Present',
       },
+      {
+        title: 'Hartman High School',
+        stage: '2009-2015',
+      },
     ],
   },
 ];
@@ -134,7 +138,7 @@ const About = () => {
                      animate="show"
                      exit="hidden"
                      className='h2'>
-            Captivating <span className='text-accent'>stories</span> birth magnificent designs.
+            About my <span className='text-accent'>journey</span>
           </motion.h2>
           <motion.p variants={fadeIn('right', 0.4)} 
                     initial="hidden"
@@ -161,7 +165,7 @@ const About = () => {
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Years of experience</div>
               </div>
-              {/* projects */}
+              {/* num of projects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp srart={0} end={35} duration={5} /> +
@@ -183,7 +187,7 @@ const About = () => {
                     initial="hidden"
                     animate="show"
                     exit="hidden"
-                    className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
+                    className='flex flex-col w-full xl:max-w-[50%] h-[50vh]'>
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
           {aboutData.map((item, itemIndex) => {
               return (
