@@ -68,11 +68,11 @@ const aboutData = [
     title: 'awards',
     info: [
       {
-        title: 'Optimization Competition',
+        title: 'Optimization Competition - Won first place in an optimization competition held at the universitys computer science department.',
         stage: '2022',
       },
       {
-        title: 'Badge of honour',
+        title: 'Badge of honour from the Commander of the Commando Brigade for initiating technological solutions according to operational requirements while managing experiments and research.',
         stage: '2020',
       },
     ],
@@ -81,33 +81,21 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Backend Software Engineer - AI-MAPS',
+        stage: 'February 2023 – July 2023',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Full Stack Developer Intern - Brainnest',
+        stage: 'November 2022 — December 2022',
       },
     ],
   },
   {
-    title: 'credentials',
+    title: 'education',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'B.Sc. In Computer Science - Bar-Ilan University',
+        stage: '2021-Present',
       },
     ],
   },
