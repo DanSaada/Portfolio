@@ -1,49 +1,3 @@
-// data
-// const workSlides = {
-//   slides: [
-//     {
-//       images: [
-//         {
-//           title: 'title',
-//           path: '/thumb1.jpg',
-//         },
-//         {
-//           title: 'title',
-//           path: '/thumb2.jpg',
-//         },
-//         {
-//           title: 'title',
-//           path: '/thumb3.jpg',
-//         },
-//         {
-//           title: 'title',
-//           path: '/thumb4.jpg',
-//         },
-//       ],
-//     },
-//     {
-//       images: [
-//         {
-//           title: 'title',
-//           path: '/thumb4.jpg',
-//         },
-//         {
-//           title: 'title',
-//           path: '/thumb1.jpg',
-//         },
-//         {
-//           title: 'title',
-//           path: '/thumb2.jpg',
-//         },
-//         {
-//           title: 'title',
-//           path: '/thumb3.jpg',
-//         },
-//       ],
-//     },
-//   ],
-// };
-
 // import swiper react component
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -81,21 +35,25 @@ import { FreeMode, Pagination } from 'swiper';
 export const workData = [
   {
     icon: <BsChatLeftText />,
+    url: 'https://github.com/DanSaada/AppChat-Android',
     title: 'Web-Chat',
     description: 'Developed a highly responsive chat platform for both Web and Android platforms. The application is built with React and Java respectively',
   },
   {
     icon: <RxPencil2 />,
+    url: 'https://github.com/DanSaada/KNN-Multi-Threading-Server-Classifier',
     title: 'Vector Classifier',
     description: 'A  project in C++ about vector classification using the KNN algorithm and a multi-threading server-client connection.',
   },
   {
     icon: <PiGameController />,
+    url: 'https://github.com/DanSaada/Arkanoid-Game',
     title: 'Arkanoid Game',
     description: 'A classic Arkanoid game in Java. The project uses object-oriented design with multiple design patterns.',
   },
   {
     icon: <VscWordWrap />,
+    url: 'https://github.com/DanSaada/Pstring',
     title: 'Pstring',
     description: 'Library functions in assembly that will allow working with Pstring in a similar way to the string.h library of the C language.',
   },
@@ -143,7 +101,9 @@ const WorkSlider = () => {
                </div>
                 {/* arrow */}
               <div className='text-3xl'>
+                <a href={item.url} target='_blank' rel='noopener noreferrer'>
                 <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300' />
+                </a>
               </div>
             </div>
           </SwiperSlide>
@@ -154,18 +114,3 @@ const WorkSlider = () => {
 };
 
 export default WorkSlider;
-
-
-
-
-
-
-
-// {slide.images.map((image, index) => {
-//   return <div>
-//     <div>
-//       {/* image */}
-//       <Image src={image.path} width={500} height={300} alt='' />
-//     </div>
-//   </div>
-// })}
