@@ -16,17 +16,11 @@ import {
   RxArrowTopRight,
 } from 'react-icons/rx'
 
-import {
-  BsChatLeftText,
-} from 'react-icons/bs'
+import { BsChatLeftText } from 'react-icons/bs'
 
-import {
-  PiGameController,
-} from 'react-icons/pi'
+import { PiGameController } from 'react-icons/pi'
 
-import {
-  VscWordWrap
-} from 'react-icons/vsc'
+import { VscWordWrap } from 'react-icons/vsc'
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper';
@@ -83,8 +77,6 @@ const WorkSlider = () => {
       freeMode={true}
       pagination={{
         clickable: true,
-        bulletClass: "swiper-pagination-bullet",
-        bulletActiveClass: "swiper-pagination-bullet-active",
       }}
       modules={[FreeMode, Pagination]}
       className='h-[240px] sm:h-[340px]'>
