@@ -37,19 +37,19 @@ export const workData = [
     icon: <BsChatLeftText />,
     url: 'https://github.com/DanSaada/AppChat-Android',
     title: 'Web-Chat',
-    description: 'Developed a highly responsive chat platform for both Web and Android platforms. The application is built with React and Java respectively',
+    description: 'Developed a highly responsive chat for both Web and Android platforms. The application is built with React and Java respectively.',
   },
   {
     icon: <RxPencil2 />,
     url: 'https://github.com/DanSaada/KNN-Multi-Threading-Server-Classifier',
     title: 'Vector Classifier',
-    description: 'A  project in C++ about vector classification using the KNN algorithm and a multi-threading server-client connection.',
+    description: 'A project in C++ about vector classification using the KNN algorithm and a multi-threading server-client connection.',
   },
   {
     icon: <PiGameController />,
     url: 'https://github.com/DanSaada/Arkanoid-Game',
     title: 'Arkanoid Game',
-    description: 'A classic Arkanoid game in Java. The project uses object-oriented design with multiple design patterns.',
+    description: 'A classic Arkanoid game in Java. The project uses object-oriented design with multiple design patterns in a GUI friendly platform.',
   },
   {
     icon: <VscWordWrap />,
@@ -83,6 +83,8 @@ const WorkSlider = () => {
       freeMode={true}
       pagination={{
         clickable: true,
+        bulletClass: "swiper-pagination-bullet",
+        bulletActiveClass: "swiper-pagination-bullet-active",
       }}
       modules={[FreeMode, Pagination]}
       className='h-[240px] sm:h-[340px]'>
