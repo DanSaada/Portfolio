@@ -34,7 +34,7 @@ const Home = () => {
           3rd year computer science student at Bar-Ilan University.
         </motion.p>
         {/* btn */}
-        <div className="flex justify-center xl:hidden relative">
+        <div className="flex justify-center xl:hidden relative z-10">
           <ProjectsBtn />
         </div>
         <motion.div variants={fadeIn('down', 0.4)} 
