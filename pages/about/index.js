@@ -4,8 +4,6 @@ import React, {useState} from 'react'
 import { 
   FaJava,
   FaPython,
-  // FaCplusplus,
-  // FaCSharp,
   FaJs,
   FaHtml5, 
   FaCss3, 
@@ -21,21 +19,6 @@ import {
 } from 'react-icons/si';
 
 import { IoCodeSlash } from 'react-icons/io5';
-
-
-
-// import {
-//   DiSqllite,
-//   DiMongodb,
-//   DiArduino,
-//   DiAndroid,
-//   DiLinux
-// } from 'react-icons/di';
-
-// import {
-//   RiAssemblyLine,
-// } from 'react-icons/ri';
-
 
 // data
 const aboutData = [
