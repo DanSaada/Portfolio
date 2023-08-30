@@ -2,15 +2,15 @@
 import Image from "next/image";
 
 // components
-import ParticlesContainer from './components/ParticlesContainer';
-import ProjectsBtn from './components/ProjectsBtn';
-import Avatar from './components/Avatar';
+import ParticlesContainer from '../components/ParticlesContainer';
+import ProjectsBtn from '../components/ProjectsBtn';
+import Avatar from '../components/Avatar';
 
 // framer motion
 import { easeInOut, motion } from "framer-motion";
 
 // variants
-import {fadeIn} from './variants'
+import {fadeIn} from '../variants'
 
 const Home = () => {
   return <div className="bg-primary/60 h-full">
