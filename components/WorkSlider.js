@@ -16,6 +16,8 @@ import {
   RxArrowTopRight,
 } from 'react-icons/rx'
 
+import { RiGithubLine } from 'react-icons/ri'
+
 import { BsChatLeftText } from 'react-icons/bs'
 
 import { PiGameController } from 'react-icons/pi'
@@ -93,10 +95,17 @@ const WorkSlider = () => {
                 <div className='mb-2 text-lg'>{item.title}</div>
                 <p className='max-w-[350px] leading-normal'>{item.description}</p>
                </div>
-                {/* arrow */}
-              <div className='text-3xl'>
+                {/* arrow & github icon */}
+              <div className='text-3xl flex justify-between items-center'>
                 <a href={item.url} target='_blank' rel='noopener noreferrer'>
-                <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300' />
+                  <div className='flex items-center'>
+                    <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300' />
+                  </div>
+                </a>
+                <a href={item.url} target='_blank' rel='noopener noreferrer'>
+                  <div className='flex items-center'>
+                    <RiGithubLine className='hover:text-accent transition-all duration-300' />
+                  </div>
                 </a>
               </div>
             </div>
