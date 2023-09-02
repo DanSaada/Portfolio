@@ -8,17 +8,25 @@ import {
   FaHtml5, 
   FaCss3, 
   FaReact, 
-  FaFigma 
+  FaLinux,
+  FaNodeJs,
 } from 'react-icons/fa';
 
 import { 
+  SiCplusplus,
   SiNextdotjs, 
   SiFramer, 
-  SiAdobexd, 
-  SiAdobephotoshop 
+  SiAssemblyscript,
+  SiMongodb,
+  SiFirebase,
+  SiVercel,
 } from 'react-icons/si';
 
-import { IoCodeSlash } from 'react-icons/io5';
+import { GrMysql } from 'react-icons/gr';
+
+import { DiAndroid } from 'react-icons/di';
+
+import { AiFillWindows } from 'react-icons/ai';
 
 // data
 const aboutData = [
@@ -28,22 +36,33 @@ const aboutData = [
       {
         title: 'Programming Languages',
         icons: [
+          <SiCplusplus />,
           <FaJava />,
-          <IoCodeSlash />,
-          // <FaCplusplus />,
-          // <FaCSharp />,
+          <FaJs />,
           <FaPython />,
-          // <DiSqllite />,
-          // <RiAssemblyLine />,
           <FaHtml5 />,
           <FaCss3 />,
-          <FaJs />,
           <FaReact />,
+          <GrMysql />,
+          <SiAssemblyscript />,
+          <DiAndroid />,
         ],
       },
       {
-        title: '',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />, <SiNextdotjs />, <SiFramer />],
+        title: 'Operating Systems',
+        icons: [<AiFillWindows />, 
+                <FaLinux />
+              ],
+      },
+      {
+        title: 'Technologies',
+        icons: [<FaNodeJs />,
+                <SiNextdotjs />, 
+                <SiFramer />,
+                <SiMongodb />,
+                <SiFirebase />,
+                <SiVercel />
+              ],
       },
     ],
   },
