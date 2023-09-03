@@ -8,10 +8,7 @@ import 'swiper/css/pagination';
 
 // icons
 import {
-  RxCrop,
-  RxDesktop,
   RxPencil2,
-  RxReader,
   RxRocket,
   RxArrowTopRight,
 } from 'react-icons/rx'
@@ -22,7 +19,7 @@ import { BsChatLeftText } from 'react-icons/bs'
 
 import { PiGameController } from 'react-icons/pi'
 
-import { VscWordWrap } from 'react-icons/vsc'
+import { VscWordWrap, VscGraph } from 'react-icons/vsc'
 
 // import required modules
 import { FreeMode, Pagination } from 'swiper';
@@ -54,9 +51,10 @@ export const workData = [
     description: 'Library functions in assembly that will allow working with Pstring in a similar way to the string.h library of the C language.',
   },
   {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    icon: <VscGraph />,
+    url: 'https://github.com/DanSaada/Automatic-Grading-System',
+    title: 'Auto Grading System',
+    description: 'An auto grading system for CS students assignments, which compiles, runs and grade the files the students submitted into a csv file.'
   }
 ];
 
