@@ -140,7 +140,7 @@ const About = () => {
                      animate="show"
                      exit="hidden"
                      className='h2'>
-            About my journey<span className='text-accent'>.</span>
+            About my <span className='text-accent'>journey.</span>
           </motion.h2>
           <motion.p variants={fadeIn('right', 0.4)} 
                     initial="hidden"
