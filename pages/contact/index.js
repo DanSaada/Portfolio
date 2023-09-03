@@ -24,6 +24,10 @@ const Contact = () => {
       'pJpYJyH8Txxr3abRn'
       ).then(res => {
         console.log(res);
+        // Reset the form fields
+        e.target.reset();
+        // Alert user that the message was sent successfully
+        window.alert('Your message was sent successfully!');
       }).catch(err => {
         console.log(err);
       });
