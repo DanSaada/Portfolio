@@ -10,7 +10,25 @@ import {motion} from 'framer-motion'
 // variants
 import { fadeIn } from "../../variants";
 
+// emailjs
+import emailjs from 'emailjs-com'
+
 const Contact = () => {
+
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs.sendForm(
+      'service_r4vtvxd', 
+      'template_emsupqd', 
+      e.target, 
+      'pJpYJyH8Txxr3abRn'
+      ).then(res => {
+        console.log(res);
+      }).catch(err => {
+        console.log(err);
+      });
+  }
+
   return (
     <div className="h-full bg-primary/30">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
@@ -26,17 +44,18 @@ const Contact = () => {
           </motion.h2>
           {/* form */}
           <motion.form variants={fadeIn('up', 0.4)} 
+                       onSubmit={sendEmail}
                        initial="hidden" 
                        animate="show" 
                        exit="hidden" 
                        className="flex-1 flex flex-col gap-6 w-full mx-auto">
             {/* input group */}
             <div className="flex gap-x-6 w-full">
-              <input type="text" placeholder="name" className="input" />
-              <input type="text" placeholder="email" className="input" />
+              <input type="text" placeholder="name" name="name" className="input" />
+              <input type="text" placeholder="email" name="user_email" className="input" />
             </div>
-            <input type="text" placeholder="subject" className="input" />
-            <textarea placeholder="message" className="textarea"></textarea>
+            <input type="text" placeholder="subject" name="subject" className="input" />
+            <textarea placeholder="message" name="message" className="textarea"></textarea>
             <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 
                               flex items-center justify-center overflow-hidden hover:border-accent group">
               <span className="group-hover:translate-y-[120%] group-hover:opacity-0 transition-all duration-500">Let&apos;s talk</span>
