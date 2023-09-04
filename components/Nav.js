@@ -58,12 +58,12 @@ const Nav = () => {
                 </div>
               </div>
               {/* icon */}
-              <div className='ml-6 mr-6'>{link.icon}</div>
+              <div className='ml-3 mr-3'>{link.icon}</div>
             </Link>);
         })}
         
         {/* Download CV Button */}
-       <div className="mx-auto xl:mx-0 ml-6 mr-6">
+       <div className="mx-auto xl:mx-0 ml-3 mr-3">
           <a href={'/Dan Saada CV.pdf'} download className="relative w-[32px] h-[32px] flex justify-center items-center 
                                           rounded-full bg-white bg-center bg-no-repeat group lg:bottom-[20%]">
             <div className="flex relative w-[30px] h-[30px] items-center justify-center rounded-full bg-accent
