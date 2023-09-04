@@ -50,7 +50,33 @@ import { BsArrowRight } from 'react-icons/bs'
 
 import { FaQuoteLeft } from 'react-icons/fa'
 
+import React, { useEffect, useState } from 'react';
+
+
 const TestimonialSlider = () => {
+  const [messageContainerHeight, setMessageContainerHeight] = useState('auto');
+
+  const updateMessageContainerHeight = () => {
+    const windowHeight = window.innerHeight;
+    const messageContainerMinHeight = 200; // Adjust this value as needed
+    const availableHeight = windowHeight - messageContainerMinHeight;
+    setMessageContainerHeight(`${availableHeight}px`);
+  };
+
+  useEffect(() => {
+    // Update message container height initially
+    updateMessageContainerHeight();
+  
+    // Update message container height when the window is resized
+    window.addEventListener('resize', updateMessageContainerHeight);
+  
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', updateMessageContainerHeight);
+    };
+  }, []);
+  
+
   return (
     <Swiper
       navigation={true}
@@ -85,7 +111,8 @@ const TestimonialSlider = () => {
                   <FaQuoteLeft className='text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0' />
                 </div>
                 {/* message */}
-                <div className='xl:text-lg text-center md:text-left'>
+                <div className='xl:text-lg text-center md:text-left md:w-400 sm:w-full sm:text-sm xs:text-sm'
+                     style={{ maxHeight: messageContainerHeight, overflowY: 'auto' }} >
                   {person.message}
                 </div>
               </div>
