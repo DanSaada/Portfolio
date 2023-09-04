@@ -59,7 +59,7 @@ const Contact = () => {
               <input type="text" placeholder="email" name="user_email" className="input" />
             </div>
             <input type="text" placeholder="subject" name="subject" className="input" />
-            <textarea placeholder="message" name="message" className="textarea"></textarea>
+            <textarea placeholder="message" name="message" className="textarea h-28"></textarea>
             <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 
                               flex items-center justify-center overflow-hidden hover:border-accent group">
               <span className="group-hover:translate-y-[120%] group-hover:opacity-0 transition-all duration-500">Let&apos;s talk</span>
