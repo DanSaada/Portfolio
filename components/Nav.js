@@ -49,7 +49,6 @@ const Nav = () => {
                               items-center group hover:text-accent transition-all duration-300`}
                   href={link.path} 
                   key={index}>
-
               {/* tooltip */}
               <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
                 <div className='bg-white relative flex text-primary items-center p-[6px] rounded-[3px]'>
@@ -59,9 +58,20 @@ const Nav = () => {
                 </div>
               </div>
               {/* icon */}
-              <div>{link.icon}</div>
+              <div className='ml-6 mr-6'>{link.icon}</div>
             </Link>);
         })}
+        
+        {/* Download CV Button */}
+       <div className="mx-auto xl:mx-0 ml-6 mr-6">
+          <a href={'/Dan Saada CV.pdf'} download className="relative w-[32px] h-[32px] flex justify-center items-center 
+                                          rounded-full bg-white bg-center bg-no-repeat group lg:bottom-[20%]">
+            <div className="flex relative w-[30px] h-[30px] items-center justify-center rounded-full bg-accent
+                          hover:bg-white hover:text-accent text-[12px]" >
+              CV
+            </div>
+          </a>
+        </div>
       </div>
     </nav>
   ); 
