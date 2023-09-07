@@ -90,6 +90,10 @@ const aboutData = [
         title: 'Full Stack Developer Intern - Brainnest',
         stage: 'November 2022 — December 2022',
       },
+      {
+        title: 'Private Programming Tutor',
+        stage: 'August 2022 — Present',
+      },
     ],
   },
   {
