@@ -83,8 +83,8 @@ const aboutData = [
     title: 'experience',
     info: [
       {
-        title: 'Backend Software Engineer - AI-MAPS',
-        stage: 'February 2023 – July 2023',
+        title: 'Backend Developer - AI-MAPS',
+        stage: 'February 2023 — July 2023',
       },
       {
         title: 'Full Stack Developer Intern - Brainnest',
