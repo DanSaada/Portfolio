@@ -20,6 +20,7 @@ import {
   SiMongodb,
   SiFirebase,
   SiVercel,
+  SiGnubash,
 } from 'react-icons/si';
 
 import { GrMysql } from 'react-icons/gr';
@@ -45,6 +46,7 @@ const aboutData = [
           <FaReact />,
           <GrMysql />,
           <SiAssemblyscript />,
+          <SiGnubash />,
           <DiAndroid />,
         ],
       },
