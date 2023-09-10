@@ -41,8 +41,6 @@ const aboutData = [
           <FaJava />,
           <FaJs />,
           <FaPython />,
-          <FaHtml5 />,
-          <FaCss3 />,
           <FaReact />,
           <GrMysql />,
           <SiAssemblyscript />,
