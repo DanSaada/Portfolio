@@ -67,7 +67,15 @@ const Nav = () => {
           <a href={'/Dan Saada CV.pdf'} download className="relative w-[32px] h-[32px] flex justify-center items-center 
                                           rounded-full bg-white bg-center bg-no-repeat group lg:bottom-[20%]">
             <div className="flex relative w-[30px] h-[30px] items-center justify-center rounded-full bg-accent
-                          hover:bg-white hover:text-accent text-[12px]" >
+                          hover:bg-white hover:text-black text-[12px]" >
+              {/* tooltip */}
+              <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
+                <div className='bg-white relative flex text-primary items-center p-[6px] rounded-[3px]'>
+                  <div className='text-[12px] leading-none font-semibold capitalize'>Download_CV</div>
+                  {/* triangle */}
+                  <div className='border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2'></div>
+                </div>
+              </div>
               CV
             </div>
           </a>
