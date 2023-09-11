@@ -29,6 +29,8 @@ import { DiAndroid } from 'react-icons/di';
 
 import { AiFillWindows } from 'react-icons/ai';
 
+import { BsGithub } from 'react-icons/bs';
+
 // data
 const aboutData = [
   {
@@ -61,7 +63,8 @@ const aboutData = [
                 <SiFramer />,
                 <SiMongodb />,
                 <SiFirebase />,
-                <SiVercel />
+                <SiVercel />,
+                <BsGithub />
               ],
       },
     ],
