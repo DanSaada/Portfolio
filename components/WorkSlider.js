@@ -93,7 +93,7 @@ const WorkSlider = () => {
                  </div>
                 </div>
                  {/* description */}
-                 <div className='mb-8'>
+                 <div className='mb-7'>
                   <p className='max-w-[350px] leading-normal'>{item.description}</p>
                  </div>
                   {/* arrow & github icon */}
