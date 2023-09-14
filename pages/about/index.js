@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import styled from 'styled-components';
 
 // icons
 import { 
@@ -125,10 +126,16 @@ import {fadeIn} from '../../variants'
 // counter
 import CountUp from 'react-countup'
 
+// a styled component for scrolling
+const ScrollableContainer = styled.div`
+  overflow-y: auto;
+  max-height: 800px; /* Set the desired height */
+`;
 
 const About = () => {
   const [index, setIndex] = useState(0)
-  return ( <>
+  return (
+   <ScrollableContainer>
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
       <Circles />
       {/* avatar img */}
@@ -235,7 +242,7 @@ const About = () => {
         </motion.div>
       </div>
     </div>
-    </>
+   </ScrollableContainer>
   );
 };
 
