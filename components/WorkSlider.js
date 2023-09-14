@@ -9,7 +9,6 @@ import 'swiper/css/pagination';
 // icons
 import {
   RxPencil2,
-  RxRocket,
   RxArrowTopRight,
 } from 'react-icons/rx'
 
@@ -54,7 +53,7 @@ export const workData = [
     icon: <VscGraph />,
     url: 'https://github.com/DanSaada/Automatic-Grading-System',
     title: 'Auto Grading System',
-    description: 'An auto grading system for CS students assignments, which compiles, runs and grade the files the students submitted into a csv file.'
+    description: 'An auto system for CS students assignments, which compiles, runs and grade submitted programs to a csv.'
   }
 ];
 
@@ -86,11 +85,16 @@ const WorkSlider = () => {
           <SwiperSlide key={index}>
             <div className='bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 
                             group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
+              <div className='flex items-center'>
+                <div className='text-4xl text-accent mb-4'>{item.icon}</div>
+                <div className='mb-3 ml-3'>
+                <div className='mb-2 text-lg'>{item.title}</div>
+               </div>
+              </div>
               {/* icon */}
-              <div className='text-4xl text-accent mb-4'>{item.icon}</div>
+              
                {/* title & description */}
                <div className='mb-8'>
-                <div className='mb-2 text-lg'>{item.title}</div>
                 <p className='max-w-[350px] leading-normal'>{item.description}</p>
                </div>
                 {/* arrow & github icon */}
