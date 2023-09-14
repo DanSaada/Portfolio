@@ -83,33 +83,32 @@ const WorkSlider = () => {
       {workData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 
+            <div className='bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col xs:flex-col gap-x-6 sm:gap-x-0 
                             group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
-              <div className='flex items-center'>
-                <div className='text-4xl text-accent mb-4'>{item.icon}</div>
-                <div className='mb-3 ml-3'>
-                <div className='mb-2 text-lg'>{item.title}</div>
-               </div>
-              </div>
-              {/* icon */}
-              
-               {/* title & description */}
-               <div className='mb-8'>
-                <p className='max-w-[350px] leading-normal'>{item.description}</p>
-               </div>
-                {/* arrow & github icon */}
-              <div className='text-3xl flex justify-between items-center'>
-                <a href={item.url} target='_blank' rel='noopener noreferrer'>
-                  <div className='flex items-center'>
-                    <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300' />
-                  </div>
-                </a>
-                <a href={item.url} target='_blank' rel='noopener noreferrer'>
-                  <div className='flex items-center'>
-                    <RiGithubLine className='hover:text-accent transition-all duration-300' />
-                  </div>
-                </a>
-              </div>
+                {/* icon & title  */}
+                <div className='flex items-center'>
+                  <div className='text-4xl text-accent mb-4'>{item.icon}</div>
+                  <div className='mb-3 ml-3'>
+                  <div className='mb-2 text-lg'>{item.title}</div>
+                 </div>
+                </div>
+                 {/* description */}
+                 <div className='mb-8'>
+                  <p className='max-w-[350px] leading-normal'>{item.description}</p>
+                 </div>
+                  {/* arrow & github icon */}
+                <div className='text-3xl flex justify-between items-center'>
+                  <a href={item.url} target='_blank' rel='noopener noreferrer'>
+                    <div className='flex items-center'>
+                      <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300' />
+                    </div>
+                  </a>
+                  <a href={item.url} target='_blank' rel='noopener noreferrer'>
+                    <div className='flex items-center'>
+                      <RiGithubLine className='hover:text-accent transition-all duration-300' />
+                    </div>
+                  </a>
+                </div>
             </div>
           </SwiperSlide>
         );
