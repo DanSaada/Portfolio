@@ -11,7 +11,7 @@ import {fadeIn} from '../../variants'
 // a styled component for scrolling
 const ScrollableContainer = styled.div`
   overflow-y: auto;
-  max-height: 800px; /* Set the desired height */
+  max-height: 600px; /* Set the desired height */
 `;
 
 const Testimonials = () => {
