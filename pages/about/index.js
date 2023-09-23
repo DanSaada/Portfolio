@@ -11,6 +11,7 @@ import {
   FaReact, 
   FaLinux,
   FaNodeJs,
+  FaDocker,
 } from 'react-icons/fa';
 
 import { 
@@ -40,6 +41,7 @@ const aboutData = [
       {
         title: 'Programming Languages',
         icons: [
+          <a href="https://iconscout.com/icons/c" class="text-underline font-size-sm" target="_blank"></a>,
           <SiCplusplus />,
           <FaJava />,
           <FaJs />,
@@ -59,7 +61,8 @@ const aboutData = [
       },
       {
         title: 'Technologies',
-        icons: [<FaNodeJs />,
+        icons: [<FaDocker />,
+                <FaNodeJs />,
                 <SiNextdotjs />, 
                 <SiFramer />,
                 <SiMongodb />,
